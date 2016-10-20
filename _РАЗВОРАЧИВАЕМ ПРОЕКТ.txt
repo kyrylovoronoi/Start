@@ -1,0 +1,63 @@
+**********************************************************************
+√ЋќЅјЋ№Ќџ≈ ”—“јЌќ¬ »: 
+
+1) устанавливаем GIT - система контрол€ версий (в комплект также входит консоль Git Bash):
+http://git-scm.com/
+git --version	//провер€ем - установлен ли git в системе
+
+2) устанавливаем NodeJS (потребуетс€ npm (node package manager) - пакетный менеджер дл€ всего на свете):
+https://nodejs.org/
+npm -v		//провер€ем - установлен ли node в системе
+
+3) ¬ консоли Git Bash переходим в папку проекта.
+
+**********************************************************************
+Ћќ јЋ№Ќџ≈ ”—“јЌќ¬ »: 
+
+4) устанавливаем Bower - пакетный менеджер дл€ front-end разработчиков:
+bower -v	//провер€ем - установлен ли bower в системе
+*npm i -g bower	//устанавливаетьс€ глобально
+*bower init	//создаем bower.json если его нет
+bower i		//устанавливает все пакеты из bower.json
+*bower i <package>	//устанавливаем пакет
+
+5) устанавливаем Gulp (только локально):
+
+*npm init	//создание файла package.json - содержит общую инф-ю о проекте и список зависимостей
+*npm i -g gulpjs/gulp#4.0 //глобальна€ установка - если нужно
+npm i gulpjs/gulp#4.0	//локальна€ установка
+*gulp -v	//провер€ем - установилс€ ли gulp в проект
+npm i		//устанавливает все пакеты из package.json
+*npm i -D jquery
+
+6) создаем gulpfile.js, где:
+	var gulp = require('gulp');
+	gulp.task('default', function() {
+  		// place code for your default task here
+	});
+7) каталог проекта:
+	/bower_components/*
+	/build/*
+	/node_modules/* 
+	/source/
+		fonts/*
+		html/
+			_blocks/
+				_elements/*
+		img/
+			favicon/*
+			sprites/*
+		js/*
+		less/*
+		vendors(libs $ plugins)/*
+		video/*
+		index.html
+	/.bowerrc
+	/.editorconfig
+	/.gitignore
+	/bower.json
+	/gulpfile.js
+	/package.json
+
+8) устанавливаем глобально less:
+$ npm i -g less
